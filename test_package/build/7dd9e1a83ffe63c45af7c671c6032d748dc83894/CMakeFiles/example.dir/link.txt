@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -m64 -stdlib=libc++ -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/example.dir/example.cpp.o  -o bin/example 
