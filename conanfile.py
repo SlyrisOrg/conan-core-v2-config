@@ -16,7 +16,7 @@ def copy(src, dest):
 
 
 class CoreconfigConan(ConanFile):
-    name = "core-config"
+    name = "Core.Config"
     version = "1.0"
     license = "Mit"
     url = "https://github.com/SlyrisOrg/conan-core-v2-config.git"
