@@ -1,5 +1,5 @@
 #include <iostream>
-#include <core/config/config.hpp>
+#include <core/config/Config.hpp>
 
 int main() {
 }
