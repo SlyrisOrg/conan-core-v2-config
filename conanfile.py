@@ -3,7 +3,6 @@ import os
 import shutil
 import errno
 
-
 def copy(src, dest):
     try:
         shutil.copytree(src, dest)
@@ -22,6 +21,8 @@ class CoreconfigConan(ConanFile):
     url = "https://github.com/SlyrisOrg/conan-core-v2-config.git"
     description = "Core::Config Modules"
     no_copy_source = True
+
+
     # No settings/options are necessary, this is header only
 
     def source(self):
@@ -33,5 +34,4 @@ class CoreconfigConan(ConanFile):
         shutil.rmtree(os.getcwd() + "/core-v2", ignore_errors=True)
 
     def package(self):
-        self.run("echo $PWD")
         self.copy("*.hpp", "include")
